@@ -6,7 +6,7 @@ import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import AssessmentIcon from '@mui/icons-material/Assessment';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -52,7 +52,7 @@ function Sidebar() {
                     <span>Stats</span>
                 </li>          
                 <li>
-                    <NotificationsIcon className='icon'/>
+                    <NotificationsNoneOutlinedIcon className='icon'/>
                     <span>Notifications</span>
                 </li>
 
