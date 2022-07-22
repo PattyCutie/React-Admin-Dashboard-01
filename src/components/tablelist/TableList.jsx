@@ -1,4 +1,4 @@
-import "./table.scss";
+import "./tablelist.scss";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const List = () => {
+const TableList = () => {
   // use List instead of Table to avoid duplicated
   const rows = [
     {
@@ -62,7 +62,7 @@ const List = () => {
     },
   ];
   return (
-    <TableContainer component={Paper} className="table">
+    <TableContainer component={Paper} className="tableList">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -100,4 +100,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default TableList;
