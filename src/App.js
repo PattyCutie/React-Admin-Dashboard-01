@@ -4,11 +4,17 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import Login from "./pages/login/Login";
 import New from "./pages/new/New";
+import "./theme/darkmode.scss"
 import { productInputs, userInputs } from "./formSource";
+import { useState } from "react";
 
 function App() {
+
+  const [darkmode, setDarkmode] = useState(false)
+
+
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/">

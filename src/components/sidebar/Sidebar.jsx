@@ -13,72 +13,102 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+import { Link } from "react-router-dom"
+
 function Sidebar() {
   return (
     <div className='sidebar'>
         <div className="top">
-            <span className="logo">VibeRace Admin</span>
+            <Link to="/" className='link'>
+                <span className="logo">VibeRaceAdmin</span>
+            </Link>
         </div>
         <hr />
         <div className="center">
             <ul>
                 <p className="title">MAIN</p>
+                <Link to="/" className='link'>
                 <li>
                     <DashboardRoundedIcon className='icon'/>
                     <span>Dashboard</span>
                 </li>
+                </Link>
 
                 <p className="title">LISTS</p>
+                <Link to="/users" className='link'>
                 <li>
                     <PersonOutlineRoundedIcon className='icon'/>
                     <span>Users</span>
                 </li>
+                </Link>
+
+                <Link to="/products" className='link'>
                 <li>
                     <StorefrontOutlinedIcon className='icon'/>
                     <span>Products</span>
-                </li>           
+                </li>
+                </Link>
+                <Link to="/orders" className='link'>           
                 <li>
                     <CreditCardIcon className='icon'/>
                     <span>Orders</span>
-                </li>           
+                </li>
+                </Link>
+                <Link to="/delivery" className='link'>           
                 <li>
                     <LocalShippingOutlinedIcon className='icon'/>
                     <span>Delivery</span>
                 </li>
+                </Link>
 
                 <p className="title">USEFUL</p>
+
+                <Link to="/stats" className='link'>
                 <li>
                     <AssessmentIcon className='icon'/>
                     <span>Stats</span>
-                </li>          
+                </li>    
+                </Link>      
+                <Link to="/notification" className='link'>           
                 <li>
                     <NotificationsNoneOutlinedIcon className='icon'/>
                     <span>Notifications</span>
                 </li>
+                </Link>
 
-                <p className="title">SERVICE</p>          
+                <p className="title">SERVICE</p>
+                <Link to="/systemhealth" className='link'>                    
                 <li>                
                     <SettingsSystemDaydreamIcon className='icon'/>
                     <span>System Health</span>
-                </li>            
+                </li>
+                </Link>            
+                <Link to="/logs" className='link'>           
                 <li>
                     <PsychologyIcon className='icon'/>
                     <span>Logs</span>
                 </li>          
+                </Link>
+                <Link to="/setting" className='link'>           
                 <li>
                     <SettingsIcon className='icon'/>
                     <span>Settings</span>
                 </li>
+                </Link>
 
                 <p className="title">USER</p>
+                <Link to="/profile" className='link'>           
                 <li>
                     <AccountBoxIcon className='icon'/>
                     <span>Profile</span>
                 </li>
+                </Link>
+                <Link to="/logout" className='link'>           
                 <li>
                     <LogoutIcon className='icon'/>
                     <span>Logout</span>
                 </li>
+                </Link>
             </ul>
         </div>
         
