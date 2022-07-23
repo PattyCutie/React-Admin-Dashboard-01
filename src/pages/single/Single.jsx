@@ -21,22 +21,22 @@ function Single() {
                 alt=""
                 className="itemImg"
               />
-              <div className="detail">
+              <div className="details">
                 <h2 className="itemTitle">Jane Doe</h2>
                 <div className="detailItem">
-                  <span className="itemkey">Email:</span>
+                  <span className="itemKey">Email : </span>
                   <span className="itemValue">janedoe@email.com</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemkey">Phone:</span>
+                  <span className="itemKey">Phone : </span>
                   <span className="itemValue">+ 1 234 567 890</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemkey">Address:</span>
+                  <span className="itemKey">Address : </span>
                   <span className="itemValue">Elton St. 234 Garden yd. NewYork</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemkey">Country:</span>
+                  <span className="itemKey">Country : </span>
                   <span className="itemValue">USA</span>
                 </div>
               </div>
