@@ -14,7 +14,7 @@ function App() {
   //const [darkmode, setDarkmode] = useState(false)
   //use context instead of useState
 
-  const {darkMode}= useContext(DarkModeContext) 
+  const { darkMode }= useContext(DarkModeContext) 
 
   return (
     <div className={darkMode ? "app darkMode" : "app"}>
