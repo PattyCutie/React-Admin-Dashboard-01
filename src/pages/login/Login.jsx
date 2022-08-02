@@ -22,7 +22,7 @@ function Login() {
         //Signed in
         const user = userCredential.user;
        // test login // console.log(user);
-       dispatch({type: "LOGIN" , payload:user})
+       dispatch({type: "LOGIN" , payload: user})
        navigate("/")
       })
       .catch((error) => {
