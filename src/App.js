@@ -8,16 +8,24 @@ import "./theme/darkMode.scss";
 import { productInputs, userInputs } from "./formSource";
 import { DarkModeContext } from "./context/darkModeContext";
 import { useContext } from "react";
+import { AuthContext } from "./context/AuthContext";
+
 
 function App() {
   //const [darkmode, setDarkmode] = useState(false)
   //use context instead of useState
 
   const { darkMode } = useContext(DarkModeContext);
-  const currentUser = true;
+
+  const {currentUser} = useContext(AuthContext)
+
+  //const currentUser = true; No need this line after added AuthContext
+
   const RequireAuth = ({ children }) => {
     return currentUser ? children : <Navigate to="/login" />;
   };
+
+  console.log(currentUser)
 
   return (
     <div className={darkMode ? "app darkMode" : "app"}>
